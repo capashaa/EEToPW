@@ -176,6 +176,39 @@ namespace ConsoleApp1
             _blocks.Add(65, (int)PixelBlock.CandyCane); //candy_cane
             _blocks.Add(66, (int)PixelBlock.CandyLicorice); //candy_licorice
             _blocks.Add(67, (int)PixelBlock.CandyChocolate); //candy_chocolate
+
+            //Platforms
+
+            //Scifi platform
+            _blocks.Add(89, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+            _blocks.Add(90, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+            _blocks.Add(91, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+            _blocks.Add(1051, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+            _blocks.Add(1164, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+            _blocks.Add(1165, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+
+            //pirate platform
+            _blocks.Add(154, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+
+            //Dojo
+            _blocks.Add(96, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+            _blocks.Add(97, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+
+            //industrial
+            _blocks.Add(146, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+
+            //Medeivial
+            _blocks.Add(158, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+
+            //Summer 2016
+            _blocks.Add(1087, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+
+            //Garden
+            _blocks.Add(1148, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+            _blocks.Add(1149, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
+
+            //Toxic
+            _blocks.Add(1150, (int)PixelBlock.CandyPlatformRed); //candy_platform_red
             #endregion
 
             #region Background
