@@ -5,7 +5,9 @@ using PixelPilot;
 using PixelPilot.PixelGameClient;
 using PixelPilot.PixelGameClient.Messages.Received;
 using PixelPilot.PixelGameClient.Messages.Send;
+using System.Runtime.CompilerServices;
 PixelPilotClient client_;
+
 // Load the configuration. Don't store your account token in the code :)
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("config.json")
@@ -37,10 +39,7 @@ client_.OnClientConnected += (_) =>
 
 };
 
-//Replace worldID with your OWNED WORLD worldid
-//Example link in Webbrowser: https://pixelwalker.net/world/4bcnhr8y8qcvecl
-//Will be: 4bcnhr8y8qcvecl
-string worldID = "4bcnhr8y8qcvecl";
-await client_.Connect(worldID);
+
+await client_.Connect(SettingsFile.settings.WorldID);
 
 Thread.Sleep(-1);
