@@ -12,8 +12,10 @@ using PixelPilot.PixelGameClient.World.Blocks;
 using static EELVL.Blocks;
 namespace ConsoleApp1
 {
-    internal class BlockUploader
+  
+    public class BlockUploader
     {
+      
         public static void PlaceBlocks(PixelPilotClient client)
         {
             //Change title name to level worldname
@@ -21,7 +23,7 @@ namespace ConsoleApp1
             //Convert EE blocks into PW blocks
             Dictionary<int, int> data = BlockConverter.EEtoPW();
             //Load EELVL from current directory
-            Level lvl = Level.Open("fun.eelvl");
+            Level lvl = Level.Open(SettingsFile.settings.EELVLFileName);
             if (client.IsConnected) {
 
                 if (changeName) client.Send(new PlayerChatOutPacket($"/title {lvl.WorldName}"));
