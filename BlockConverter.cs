@@ -13,6 +13,7 @@ namespace ConsoleApp1
 
     public static class BlockConverter
     {
+
         //Meh hardcoded blocks damn
         public static Dictionary<int,int> EEtoPW()
         {
