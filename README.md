@@ -3,7 +3,7 @@ Everybody Edits levels to PixelWalker
 
 # How to use this tool:
 Add config.json into the bin folder:  
-Don't remember to add your authtoken or email and password. 
+Don't remember to add your authtoken or email and password.   
 **PLEASE DON'T SHARE THIS FILE WITH OTHERS**  
 ```{
   "AccountToken": "Your Authtoken goes here",
