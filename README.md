@@ -5,3 +5,7 @@ Everybody Edits levels to PixelWalker
 [Using EELVL SDK by Luke](https://gitlab.com/LukeM212/EELVL)  
 
 Everything else is hardcoded. But meh.  
+
+## Not supported yet:
+Rotateable blocks (Not spikes)  
+Effects
