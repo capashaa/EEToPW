@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <Authors>Luke Miles</Authors>
+    <Description>A small library that can serialise and deserialise the EELVL file format used by the game Everybody Edits.</Description>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
+    <FileVersion>3.1.0.0</FileVersion>
+    <NeutralLanguage></NeutralLanguage>
+    <PackageReleaseNotes />
+    <PackageTags>EverybodyEdits Everybody Edits EELVL</PackageTags>
+    <PackageProjectUrl>https://gitlab.com/LukeM212/EELVL</PackageProjectUrl>
+    <RepositoryUrl>https://gitlab.com/LukeM212/EELVL</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>3.1.0</Version>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetZip" Version="1.13.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\license.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
