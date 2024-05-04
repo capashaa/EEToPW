@@ -22,7 +22,8 @@ Don't remember to add your authtoken or email and password.
   }
 }
 ```
-Go to Program.cs, add your WorldID there and run.  
+Go to Settings and change the settings for the tool.  
+When finished run.
 
 ## Misc
 [Using Marten's PixelWalker SDK](https://github.com/MartenM/PixelPilot)  
