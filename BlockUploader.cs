@@ -103,7 +103,7 @@ namespace ConsoleApp1
                     {
                         if (client.IsConnected)
                         {
-                            client.Send(new PixelPilot.PixelGameClient.World.Blocks.PortalBlock(x, y, 1, (int)PixelBlock.Portal, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).ID, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).Target, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).Rotation).AsPacketOut());
+                            client.Send(new PixelPilot.PixelGameClient.World.Blocks.PortalBlock(x, y, 1, (int)PixelBlock.PortalInvisible, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).ID, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).Target, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).Rotation).AsPacketOut());
                             Thread.Sleep(10);
                         }
                     }
@@ -111,7 +111,7 @@ namespace ConsoleApp1
                     {
                         if (client.IsConnected)
                         {
-                            client.Send(new PixelPilot.PixelGameClient.World.Blocks.PortalBlock(x, y, 1, (int)PixelBlock.PortalInvisible, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).ID, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).Target, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).Rotation).AsPacketOut());
+                            client.Send(new PixelPilot.PixelGameClient.World.Blocks.PortalBlock(x, y, 1, (int)PixelBlock.Portal, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).ID, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).Target, ((EELVL.Blocks.PortalBlock)lvl[0, x, y]).Rotation).AsPacketOut());
                             Thread.Sleep(10);
                         }
                     }
