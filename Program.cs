@@ -5,6 +5,7 @@ using PixelPilot;
 using PixelPilot.PixelGameClient;
 using PixelPilot.PixelGameClient.Messages.Received;
 using PixelPilot.PixelGameClient.Messages.Send;
+PixelPilotClient client_;
 // Load the configuration. Don't store your account token in the code :)
 var configuration = new ConfigurationBuilder()
     .AddJsonFile("config.json")
@@ -19,15 +20,27 @@ if (config == null)
     return;
 }
 // Create a client.
-var client = new PixelPilotClient(config.AccountToken, false);
+if (config.AccountEmail != null && config.AccountPassword != null)
+{
+    client_ = new PixelPilotClient(config.AccountEmail, config.AccountPassword, false);
+}
+else
+{
+    client_ = new PixelPilotClient(config.AccountToken, false);
+}
 
 // Executed once the client receives INIT
 // Make a platform and do some silly loops.
-client.OnClientConnected +=  (_) =>
+client_.OnClientConnected += (_) =>
 {
-    new System.Threading.Thread(() => BlockUploader.PlaceBlocks(client)).Start();
+    new System.Threading.Thread(() => BlockUploader.PlaceBlocks(client_)).Start();
 
 };
-await client.Connect("4bcnhr8y8qcvecl");
+
+//Replace worldID with your OWNED WORLD worldid
+//Example link in Webbrowser: https://pixelwalker.net/world/4bcnhr8y8qcvecl
+//Will be: 4bcnhr8y8qcvecl
+string worldID = "4bcnhr8y8qcvecl";
+await client_.Connect(worldID);
 
 Thread.Sleep(-1);
